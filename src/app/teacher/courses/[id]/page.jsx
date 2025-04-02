@@ -53,7 +53,7 @@ import { Separator } from "@/components/ui/separator"
 
 export default function CourseManagementPage() {
   const params = useParams()
-  const courseId = params.id as string
+  const courseId = params.id
 
   // Find the course by ID from our sample data
   const course = courses.find((c) => c.id.toString() === courseId) || courses[0]
@@ -70,7 +70,7 @@ export default function CourseManagementPage() {
     setSections([...sections, newSection])
   }
 
-  const addLesson = (sectionId: number) => {
+  const addLesson = (sectionId) => {
     const updatedSections = sections.map((section) => {
       if (section.id === sectionId) {
         return {

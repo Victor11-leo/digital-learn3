@@ -88,7 +88,7 @@ const similarJobs = [
   },
 ]
 
-export default function JobDetailPage({ params }: { params: { id: string } }) {
+export default function JobDetailPage({ params }) {
   return (
     <div className="flex flex-col min-h-screen p-4">
       {/* Header */}

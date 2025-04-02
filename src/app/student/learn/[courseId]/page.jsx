@@ -27,7 +27,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
-export default function CourseLearnPage({ params }: { params: { courseId: string } }) {
+export default function CourseLearnPage({ params }) {
   // In a real application, you would fetch the course data based on the ID
   const courseId = params.courseId
   const course = mockCourses.find((c) => c.id.toString() === courseId) || mockCourses[0]
@@ -404,7 +404,7 @@ export default function CourseLearnPage({ params }: { params: { courseId: string
 }
 
 // Course Sidebar Component
-function CourseSidebar({ course, currentLessonId }: { course: any; currentLessonId: number }) {
+function CourseSidebar({ course, currentLessonId }) {
   return (
     <div className="h-full flex flex-col">
       <div className="p-4 border-b">
