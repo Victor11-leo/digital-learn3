@@ -23,7 +23,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import Header from "@/components/global/Header"
 import { allCourses, courses,reviews } from "@/lib/data"
 
-export default function CourseDetailsPage({ params }: { params: { id: string } }) {
+export default function CourseDetailsPage({ params }) {
   
   const courseId = Number.parseInt(params.id)
   const course = allCourses.find((c) => c.id === courseId) || courses[0]

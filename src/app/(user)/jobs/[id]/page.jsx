@@ -88,7 +88,7 @@ const similarJobs = [
   },
 ]
 
-export default function JobDetailPage({ params }: { params: { id: string } }) {
+export default function JobDetailPage({ params }) {
   return (
     <>
       
